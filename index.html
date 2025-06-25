@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img src="img/logo.PNG" class="logo" alt="">
+        <div class="search-box">
+            <input type="text" class="search-bar" placeholder="search">
+            <button class="search-btn"><img src="img/icons/search.PNG" alt=""></button>
+        </div>
+        <div class="user-options">
+            <img src="img/icons/video.PNG" class="icon" alt="">
+            <img src="img/icons/grid.PNG" class="icon" alt="">
+            <img src="img/icons/bell.PNG" class="icon" alt="">
+            <div class="user-dp">
+                <img src="img/profile-pic.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <div class="side-bar">
+        <a href="#" class="links active"><img src="img/icons/home.PNG" alt="">home</a>
+        <a href="#" class="links"><img src="img/icons/explore.PNG" alt="">explore</a>
+        <a href="#" class="links"><img src="img/icons/subscription.PNG" alt="">subscription</a>
+        <hr class="seperator">
+        <a href="#" class="links"><img src="img/icons/library.PNG" alt="">library</a>
+        <a href="#" class="links"><img src="img/icons/history.PNG" alt="">history</a>
+        <a href="#" class="links"><img src="img/icons/your-video.PNG" alt="">your video</a>
+        <a href="#" class="links"><img src="img/icons/watch-later.PNG" alt="">watch later</a>
+        <a href="#" class="links"><img src="img/icons/liked video.PNG" alt="">like video</a>
+        <a href="#" class="links"><img src="img/icons/show more.PNG" alt="">show more</a>
+    </div>
+
+    <!-- filters -->
+    <div class="filters">
+        <button class="filter-options active">all</button>
+        <button class="filter-options">CSS</button>
+        <button class="filter-options">web development</button>
+        <button class="filter-options">python</button>
+        <button class="filter-options">entertainment</button>
+        <button class="filter-options">marvel</button>
+        <button class="filter-options">javascript</button>
+        <button class="filter-options">artificial intelligence</button>
+        <button class="filter-options">machine learning</button>
+        <button class="filter-options">trending</button>
+    </div>
+
+  
+    
+    <div class="video-container" id="video-container" >
+
+        <div id="loading-spinner" class="spinner">
+            <!-- Loading Spinner -->
+            <div class="circle"></div>
+        </div>
+        <!-- Videos will be populated here via JavaScript -->
+    </div>
+    
+
+    
+    <script src="app.js"></script>
+    
+</body>
+</html>
